@@ -23,6 +23,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/white"
+        android:layout_marginTop="20dp"
         />
 
 

@@ -14,15 +14,26 @@ class StudentResultActivity : AppCompatActivity() {
         val tvIpk: TextView = findViewById<TextView>(R.id.tvIpk)
         val tvPhoneNumber: TextView = findViewById<TextView>(R.id.tvPhoneNumber)
 
-        val npm: String? = intent.getStringExtra("npm")
-        val name: String? = intent.getStringExtra("name")
-        val ipk: Double = intent.getDoubleExtra("ipk", 0.0)
-        val phoneNumber: String? = intent.getStringExtra("phoneNumber")
+        val student = intent.getParcelableExtra<Student>("student")
 
-        tvNpm.text = npm
-        tvName.text = name
-        tvIpk.text = ipk.toString()
-        tvPhoneNumber.text = phoneNumber
+        if(student == null){
+            val npm: String? = intent.getStringExtra("npm")
+            val name: String? = intent.getStringExtra("name")
+            val ipk: Double = intent.getDoubleExtra("ipk", 0.0)
+            val phoneNumber: String? = intent.getStringExtra("phoneNumber")
+
+            tvNpm.text = npm
+            tvName.text = name
+            tvIpk.text = ipk.toString()
+            tvPhoneNumber.text = phoneNumber
+
+        } else {
+            tvNpm.text = student.npm
+            tvName.text = student.name
+            tvIpk.text = student.ipk.toString()
+            tvPhoneNumber.text = student.phoneNumber
+        }
+
 
     }
 }

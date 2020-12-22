@@ -28,7 +28,13 @@ class StudentActivity : AppCompatActivity() {
 
             val npm = etNpm.text.toString()
             val name = etName.text.toString()
-            val ipk = etIpk.text.toString().toDouble()
+
+            var ipk = 0.0
+            val ipkString = etIpk.text.toString()
+            if(ipkString != ""){
+                ipk = etIpk.text.toString().toDouble()
+            }
+
             val phoneNumber = etPhoneNumber.text.toString()
 
             val i = Intent( this, StudentResultActivity::class.java)

@@ -7,5 +7,13 @@
     <string name="multiply">*</string>
     <string name="divison">/</string>
     <string name="result">Result</string>
+    <string name="logo">Logo</string>
+    <string name="npm">NPM</string>
+    <string name="name">Name</string>
+    <string name="ipk">IPK</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="send_with_intent">Send with Intent</string>
+    <string name="send_with_intent_parcelable">Send with Intent Parcelable</string>
+    <string name="call">Call</string>
 
 </resources>

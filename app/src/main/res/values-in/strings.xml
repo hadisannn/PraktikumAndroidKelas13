@@ -16,4 +16,5 @@
     <string name="send_with_intent">Kirim dengan Intent</string>
     <string name="send_with_intent_parcelable">Kirim dengan Intent Parcelable</string>
     <string name="call">Lakukan Panggilan</string>
+    <string name="language_option">Pilihan Bahasa</string>
 </resources>
